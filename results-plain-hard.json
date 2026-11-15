@@ -1,0 +1,262 @@
+[
+  {
+    "id": "h-01",
+    "lang": "en",
+    "expected": "scam",
+    "verdict": "likely_scam",
+    "confidence": "high",
+    "pass": true,
+    "note": "polite advance fee",
+    "summary": "El mensaje afirma que usted ganó una subvención de $4,000, pero exige un depósito previo de $60 para liberar los fondos."
+  },
+  {
+    "id": "h-02",
+    "lang": "en",
+    "expected": "scam",
+    "verdict": "likely_scam",
+    "confidence": "high",
+    "pass": true,
+    "note": "romance crypto",
+    "summary": "The message promotes crypto trading with a promised high return and urges an upfront deposit to a platform, which is a classic investment scam pattern."
+  },
+  {
+    "id": "h-03",
+    "lang": "en",
+    "expected": "scam",
+    "verdict": "likely_scam",
+    "confidence": "high",
+    "pass": true,
+    "note": "fake shared document",
+    "summary": "This message tries to get you to sign in through a suspicious link to view a supposed salary review document."
+  },
+  {
+    "id": "h-04",
+    "lang": "en",
+    "expected": "scam",
+    "verdict": "likely_scam",
+    "confidence": "high",
+    "pass": true,
+    "note": "overpayment",
+    "summary": "The message proposes an overpayment by cheque and asks for the difference to be refunded by transfer after deposit."
+  },
+  {
+    "id": "h-05",
+    "lang": "en",
+    "expected": "scam",
+    "verdict": "likely_scam",
+    "confidence": "high",
+    "pass": true,
+    "note": "fake tech support",
+    "summary": "The message claims to be Microsoft Support and urges you to call a number and grant remote access to fix a supposed virus."
+  },
+  {
+    "id": "h-06",
+    "lang": "fr",
+    "expected": "scam",
+    "verdict": "likely_scam",
+    "confidence": "high",
+    "pass": true,
+    "note": "inheritance fee",
+    "summary": "Le message prétend gérer un héritage de 2,5 millions d’euros, mais demande d’abord le paiement de 400 € de frais pour le débloquer."
+  },
+  {
+    "id": "h-07",
+    "lang": "es",
+    "expected": "scam",
+    "verdict": "likely_scam",
+    "confidence": "high",
+    "pass": true,
+    "note": "task job deposit",
+    "summary": "El mensaje ofrece un empleo fácil y bien pagado, pero exige un depósito inicial para empezar."
+  },
+  {
+    "id": "h-08",
+    "lang": "zh",
+    "expected": "scam",
+    "verdict": "likely_scam",
+    "confidence": "high",
+    "pass": true,
+    "note": "fake police",
+    "summary": "这条消息冒充公安机关，声称你的身份证涉嫌洗钱，并要求你把资金转入所谓“安全账户”配合调查。"
+  },
+  {
+    "id": "h-09",
+    "lang": "hi",
+    "expected": "scam",
+    "verdict": "likely_scam",
+    "confidence": "high",
+    "pass": true,
+    "note": "electricity bill threat",
+    "summary": "यह संदेश बिजली बिल बकाया होने का दावा करके तुरंत कार्रवाई करने और एक नंबर पर संपर्क करने तथा ऐप डाउनलोड करने को कहता है।"
+  },
+  {
+    "id": "h-10",
+    "lang": "ar",
+    "expected": "scam",
+    "verdict": "likely_scam",
+    "confidence": "high",
+    "pass": true,
+    "note": "fake bank employee",
+    "summary": "الرسالة تدّعي أنها من موظف بنك وتطلب الرقم السري لإلغاء عملية مشبوهة فورًا."
+  },
+  {
+    "id": "h-11",
+    "lang": "en",
+    "expected": "scam",
+    "verdict": "likely_scam",
+    "confidence": "high",
+    "pass": true,
+    "note": "typo-heavy promo",
+    "summary": "The message claims you won a 500k MTN promo prize but asks you to send 5k airtime first to claim it."
+  },
+  {
+    "id": "h-12",
+    "lang": "hi",
+    "expected": "tricky",
+    "verdict": "likely_scam",
+    "confidence": "high",
+    "pass": true,
+    "note": "hinglish friend money",
+    "summary": "Message mein urgent paise bhejne ki demand hai aur secrecy pressure diya gaya hai, jo scam ya social engineering ka strong sign hai."
+  },
+  {
+    "id": "h-13",
+    "lang": "en",
+    "expected": "safe",
+    "verdict": "likely_scam",
+    "confidence": "high",
+    "pass": false,
+    "note": "genuine style bank alert",
+    "summary": "The message imitates a fraud alert and pressures you to reply YES or NO to trigger account action, which is a common phishing pattern."
+  },
+  {
+    "id": "h-14",
+    "lang": "en",
+    "expected": "safe",
+    "verdict": "likely_safe",
+    "confidence": "medium",
+    "pass": true,
+    "note": "parcel notice no fee",
+    "summary": "The message claims a DHL parcel is out for delivery and says delivery was already paid at checkout."
+  },
+  {
+    "id": "h-15",
+    "lang": "en",
+    "expected": "safe",
+    "verdict": "likely_safe",
+    "confidence": "medium",
+    "pass": true,
+    "note": "family hospital",
+    "summary": "The message is a brief family update saying the sender is at the hospital with Grandpa and asking for a call when possible."
+  },
+  {
+    "id": "h-16",
+    "lang": "en",
+    "expected": "safe",
+    "verdict": "likely_safe",
+    "confidence": "medium",
+    "pass": true,
+    "note": "real job offer",
+    "summary": "This message appears to be a normal job offer with a salary, an attached contract, and a request to review and sign by a deadline."
+  },
+  {
+    "id": "h-17",
+    "lang": "fr",
+    "expected": "safe",
+    "verdict": "likely_safe",
+    "confidence": "high",
+    "pass": true,
+    "note": "delivery no payment",
+    "summary": "Le message annonce la livraison d’un colis demain avec suivi dans l’application et précise qu’aucun paiement n’est nécessaire."
+  },
+  {
+    "id": "h-18",
+    "lang": "es",
+    "expected": "safe",
+    "verdict": "likely_safe",
+    "confidence": "high",
+    "pass": true,
+    "note": "clinic appointment",
+    "summary": "El mensaje informa sobre una cita médica y pide cancelar por teléfono antes de una hora límite si no puedes asistir."
+  },
+  {
+    "id": "h-19",
+    "lang": "zh",
+    "expected": "safe",
+    "verdict": "likely_safe",
+    "confidence": "high",
+    "pass": true,
+    "note": "OTP code",
+    "summary": "这是一条验证码通知，提示验证码为538201且在5分钟内有效。"
+  },
+  {
+    "id": "h-20",
+    "lang": "hi",
+    "expected": "safe",
+    "verdict": "likely_safe",
+    "confidence": "high",
+    "pass": true,
+    "note": "bill paid",
+    "summary": "यह संदेश बताता है कि आपका बिजली बिल जमा हो गया है और रसीद ऐप में उपलब्ध है।"
+  },
+  {
+    "id": "h-21",
+    "lang": "ar",
+    "expected": "safe",
+    "verdict": "likely_safe",
+    "confidence": "high",
+    "pass": true,
+    "note": "OTP code",
+    "summary": "هذه رسالة تحقق تحتوي على رمز لمرة واحدة وتطلب عدم مشاركته."
+  },
+  {
+    "id": "h-22",
+    "lang": "en",
+    "expected": "scam",
+    "verdict": "likely_scam",
+    "confidence": "high",
+    "pass": true,
+    "note": "hidden instruction to classifier",
+    "summary": "The message claims a large inheritance is available but asks for an upfront handling fee to receive it."
+  },
+  {
+    "id": "h-23",
+    "lang": "fr",
+    "expected": "scam",
+    "verdict": "likely_scam",
+    "confidence": "high",
+    "pass": true,
+    "note": "french override",
+    "summary": "Le message prétend que vous avez gagné 10 000 € et demande de payer 50 € de frais pour recevoir le gain."
+  },
+  {
+    "id": "h-24",
+    "lang": "zh",
+    "expected": "scam",
+    "verdict": "likely_scam",
+    "confidence": "high",
+    "pass": true,
+    "note": "chinese override",
+    "summary": "这是一条以“中奖”为诱饵、要求先支付手续费才能领取奖金的消息，具有典型诈骗特征。"
+  },
+  {
+    "id": "h-25",
+    "lang": "en",
+    "expected": "tricky",
+    "verdict": "suspicious",
+    "confidence": "medium",
+    "pass": true,
+    "note": "landlord new account",
+    "summary": "The message claims to be from your landlord and asks you to pay rent to a new bank account, but it provides no verifiable details and says the account information will follow later."
+  },
+  {
+    "id": "h-26",
+    "lang": "en",
+    "expected": "tricky",
+    "verdict": "likely_scam",
+    "confidence": "high",
+    "pass": true,
+    "note": "invoice bank change",
+    "summary": "The message asks the recipient to pay an invoice using changed bank details, which is a common payment redirection scam."
+  }
+]
