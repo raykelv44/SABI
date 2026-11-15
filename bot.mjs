@@ -189,7 +189,7 @@ const say = (chat_id, text) => tg("sendMessage", { chat_id, text: text.slice(0, 
 
 // Privacy: only date, scam type, verdict and language are saved. No message text, no user IDs.
 function summary() {
-  const out = { total: 0, verdicts: {}, types: {}, languages: {}, updated: new Date().toISOString() };
+  const out = { total: 0, verdicts: {}, types: {}, languages: {}, confidence: {}, endings: {}, days: {}, updated: new Date().toISOString() };
   if (!existsSync(LOG)) return out;
   for (const line of readFileSync(LOG, "utf8").split("\n")) {
     if (!line.trim()) continue;
@@ -198,14 +198,14 @@ function summary() {
       out.total++;
       out.verdicts[o.verdict] = (out.verdicts[o.verdict] || 0) + 1;
       out.types[o.type] = (out.types[o.type] || 0) + 1;
-      out.languages[o.lang] = (out.languages[o.lang] || 0) + 1;
+      out.languages[o.lang] = (out.languages[o.lang] || 0) + 1; if (o.conf) out.confidence[o.conf] = (out.confidence[o.conf] || 0) + 1; if (o.tld && o.tld !== "none") out.endings[o.tld] = (out.endings[o.tld] || 0) + 1; if (o.d) out.days[o.d] = (out.days[o.d] || 0) + 1;
     } catch (e) { /* skip a bad line */ }
   }
   return out;
 }
 function logCheck(r, lang) {
   try {
-    const row = { d: new Date().toISOString().slice(0, 10), type: r.scam_type, verdict: r.verdict, lang };
+    const tld = (String(r.sample || "").match(/https?:\/\/[^\s\/]+?\.([a-z]{2,10})(?=[\/\s:?]|$)/i) || [])[1]; const row = { d: new Date().toISOString().slice(0, 10), type: r.scam_type, verdict: r.verdict, lang, conf: r.confidence, tld: tld ? tld.toLowerCase() : "none" };
     appendFileSync(LOG, JSON.stringify(row) + "\n");
     writeFileSync("stats.json", JSON.stringify(summary(), null, 2));
   } catch (e) {
@@ -220,7 +220,7 @@ function statsText() {
   return "Sabi stats (counts only, no message text saved)\n\nTotal checks: " + s.total +
     "\n\nVerdicts:\n" + lines(s.verdicts) +
     "\n\nScam types:\n" + lines(s.types) +
-    "\n\nLanguages:\n" + lines(s.languages);
+    "\n\nLanguages:\n" + lines(s.languages) + "\n\nConfidence:\n" + lines(s.confidence) + "\n\nLink endings:\n" + lines(s.endings);
 }
 
 let day = new Date().toISOString().slice(0, 10);
