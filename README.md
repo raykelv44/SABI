@@ -2,7 +2,7 @@
 
 Sabi is a Telegram bot that checks suspicious messages in any language and tells you whether they look like a scam, why, and what to do. Try it: @sabicheckerbot
 
-Built for [openserv hackathon] by [chidera edwin].
+Built for openserv hackathon by chidera edwin.
 
 ## What it does
 - Paste or forward a message. Sabi replies with a verdict (likely scam, suspicious or likely safe), a confidence level, red flags and safe next steps.
